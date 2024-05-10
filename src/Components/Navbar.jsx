@@ -22,9 +22,9 @@ const Navbar = () => {
       <nav className='fixed top-0 left-0 bg-gray-200 w-full shadow'>
         <div className='container m-auto flex justify-between tracking-widest  items-center text-gray-700'>
           <ul className='hidden md:flex items-center pr-10  text-base font-semibold cursor-pointer'>
-            <Link to={'/'}><li className='hover:bg-gray-400 rounded py-3 px-6 my-2'>Login</li></Link>
-            <Link to={'/register'}><li className='hover:bg-gray-400 rounded py-3 px-6 my-2'>Register</li></Link>
-            <li className='hover:bg-gray-400 rounded py-3 px-6 my-2'>Contact</li>
+            <Link to={'/'}><li className='hover:bg-gray-400 rounded py-3 px-6 my-2 ml-2'>Login</li></Link>
+            <Link to={'/register'}><li className='hover:bg-gray-400 rounded py-3 px-6 my-2 ml-2'>Register</li></Link>
+            <li className='hover:bg-gray-400 rounded py-3 px-6 my-2 ml-2'>Contact</li>
           </ul>
           <button onClick={() => setNavbarOpen(!navbarOpen)} className='block md:hidden py-3 px-4 mx-2 right-5 rounded focus:outline-none hover:bg-gray-400  group'>
             <div className='w-5 h-1 bg-gray-700 mb-1'></div>
@@ -36,15 +36,15 @@ const Navbar = () => {
 
                   <i className="fa-sharp fa-solid fa-circle-xmark fa-2xl -left-5 absolute  text-gray-500 border-solid"><button className='hover:bg-blue-500  rounded w-full'></button></i>
                   <br /><br />
-                  <div className='font-bold text-gray'>_____________________</div>
+                  <div className='font-bold text-gray'>_____________</div>
                 </div>
                 <br /><br /><br /><br />
 
 
-                <Link to={'/'} className='w-full'><li className=' py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full'>Login<i className="fa-solid fa-taxi absolute left-12 py-1 items-center"></i></li></Link>
-                <Link to={'/register'} className='w-full'><li className=' py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full'>Register<i className="fa-solid fa-address-card absolute left-12 py-1 items-center"></i></li></Link>
+                <Link to={'/'} className='w-full'><li className='  py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full mr-3 '>Login<i className="fa-solid fa-taxi absolute left-12 py-1 items-center  "></i></li></Link>
+                <Link to={'/register'} className='w-full'><li className=' py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full ml-4'><i className="fa-solid fa-address-card absolute left-12 py-1 items-center "></i>Register</li></Link>
 
-                <li className=' py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full'>Contact<i className="fa-solid fa-phone-volume absolute left-12 py-1 items-center"></i></li>
+                <li className='  py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full ml-5'><i className="fa-solid fa-phone-volume absolute left-12 py-1 items-center  "></i>Contact</li>
               </ul>
               <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               <div className=' py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full'>
