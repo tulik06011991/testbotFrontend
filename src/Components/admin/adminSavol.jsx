@@ -26,7 +26,7 @@ const adminSavol = () => {
     const admin = async () =>{
       try {
         
-        const response = await axios.get(`https://testbotbackend-10.onrender.com/foydalanuvchi/user/${id}`,
+        const response = await axios.get(`https://testbotbackend-11.onrender.com/foydalanuvchi/user/${id}`,
         {
           headers: {
             'Content-Type': 'application/json',
