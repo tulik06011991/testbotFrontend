@@ -30,7 +30,7 @@ const Login = () => {
             "Access-Control-Allow-Methods": "OPTIONS, GET, PUT POST",
             "Access-Control-Allow-Headers": "*"
           },
-          withCredentials: true
+         
         },
       );
 
