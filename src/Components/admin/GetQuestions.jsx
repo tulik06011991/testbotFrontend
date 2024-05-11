@@ -11,7 +11,7 @@ const GetQuestions = () => {
     useEffect(() => {
         const fetchQuestions = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/test/answer/get');
+                const response = await axios.get('https://testbotbackend-4.onrender.com/test/answer/get');
                 setData(response.data);
                 console.log(response.data);
             } catch (error) {

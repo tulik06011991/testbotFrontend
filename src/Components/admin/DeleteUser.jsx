@@ -12,7 +12,7 @@ const DeleteUser = () => {
     const handleDelete = async () =>{
         const token = localStorage.getItem('token');
         try {
-            const response = await axios.delete(`http://localhost:3000/foydalanuvchi/user/${id}`,
+            const response = await axios.delete(`https://testbotbackend-4.onrender.com/foydalanuvchi/user/${id}`,
             {
                 headers: {
                     'Content-Type': 'application/json',

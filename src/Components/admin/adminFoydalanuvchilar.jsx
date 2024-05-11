@@ -11,7 +11,7 @@ const AdminFoydalanuvchilar = () => {
     const handleDelete = async (userId) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.delete(`http://localhost:3000/foydalanuvchi/user/${userId}`, {
+            await axios.delete(`https://testbotbackend-4.onrender.com/foydalanuvchi/user/${userId}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'access_token': token
@@ -29,7 +29,7 @@ const AdminFoydalanuvchilar = () => {
         const token = localStorage.getItem('token');
         const getUser = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/foydalanuvchi/users', {
+                const response = await axios.get('https://testbotbackend-4.onrender.com/foydalanuvchi/users', {
                     headers: {
                         'Content-Type': 'application/json',
                         'access_token': token

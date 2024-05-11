@@ -22,7 +22,7 @@ const Logout = () => {
             localStorage.removeItem('ID')
           }
             try {
-              const response = await axios.get('http://localhost:3000/auth/logout', {
+              const response = await axios.get('https://testbotbackend-4.onrender.com/auth/logout', {
                 
               withCredentials: true // Cookie-larni so'rovga qo'shish
               });
