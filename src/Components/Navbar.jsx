@@ -41,8 +41,8 @@ const Navbar = () => {
                 <br /><br /><br /><br />
 
 
-                <Link to={'/'} className='w-full'><li className='  py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full ml-4 mr-10 '>Login<i className="fa-solid fa-taxi absolute left-12 py-1 items-center mr-4 "></i></li></Link>
-                <Link to={'/register'} className='w-full'><li className=' py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full ml-8'><i className="fa-solid fa-address-card absolute left-12 py-1 items-center "></i>Register</li></Link>
+                <Link to={'/'} className='w-full'><li className='  py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full ml-4 mr-8 '>Login<i className="fa-solid fa-taxi absolute left-12 py-1 items-center mr-4 "></i></li></Link>
+                <Link to={'/register'} className='w-full'><li className=' py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full ml-6'><i className="fa-solid fa-address-card absolute left-12 py-1 items-center "></i>Register</li></Link>
 
                 <li className='  py-4 hover:bg-gray-400 rounded px-6  font-bold hover:text-white tracking-widest w-full ml-12'><i className="fa-solid fa-phone-volume absolute left-12 py-1 items-center ml-0 "></i>Contact</li>
               </ul>
