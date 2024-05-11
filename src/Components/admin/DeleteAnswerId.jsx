@@ -12,7 +12,7 @@ const DeleteAnswerId = () => {
  useEffect(() =>{
   const deleteUserAnswer = async () => {
     try {
-      await axios.delete(`https://testbotbackend-7.onrender.com/test/deleteJavoblarId/${id}`);
+      await axios.delete(`https://testbotbackend-8.onrender.com/test/deleteJavoblarId/${id}`);
       setDeleted(true);
     } catch (error) {
       console.error('Error deleting user answer:', error);
