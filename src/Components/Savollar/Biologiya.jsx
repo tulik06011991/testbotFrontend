@@ -39,7 +39,7 @@ const Biologiya = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://testbotbackend-8.onrender.com/test/answer/post', {
+      const response = await axios.post('https://testbotbackend-10.onrender.com/test/answer/post', {
         userId: user,
         questionId: questions[currentQuestionIndex]._id,
         userAnswer: userAnswers[currentQuestionIndex]
