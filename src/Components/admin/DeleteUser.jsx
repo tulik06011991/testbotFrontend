@@ -15,7 +15,10 @@ const DeleteUser = () => {
             const response = await axios.delete(`https://testbotbackend-11.onrender.com/foydalanuvchi/user/${id}`,
             {
                 headers: {
-                    'Content-Type': 'application/json',
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    "Access-Control-Allow-Methods": "OPTIONS, GET, PUT POST DELETE",
+                    "Access-Control-Allow-Headers": "*",
                     'access_token': token
                 },
                 withCredentials: true
