@@ -15,7 +15,7 @@ const [password, setPassword] = useState('')
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:3000/auth/register',
+        'https://testbotbackend-8.onrender.comauth/register',
         { username: username, email: email, password: password },
         {
           headers: {

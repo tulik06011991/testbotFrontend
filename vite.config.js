@@ -7,7 +7,7 @@ export default defineConfig({
   index:{
     proxy:{
       '/' :{
-        target: 'http://localhost:3000',
+        target: "http://localhost:3000"  || "https://testbotbackend-8.onrender.com ",
         changeOrigin: true
       }
     }
