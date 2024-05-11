@@ -19,6 +19,7 @@ import DeleteQuestions from './Components/admin/DeleteQuestions'
 import GetQuestions from './Components/admin/GetQuestions'
 import AdminFoydalanuvchilar from './Components/admin/adminFoydalanuvchilar'
 import DeleteUser from './Components/admin/DeleteUser'
+import NotFound from './Components/NotFound'
 
 function App() {
   return ( 
@@ -42,6 +43,7 @@ function App() {
       <Route path='/DeleteQuestions' element = {<DeleteQuestions/>}/>
       <Route path='/adminfoydalanuvchilar' element = {<AdminFoydalanuvchilar/>}/>
       <Route path='/DeleteUser/:id' element = {<DeleteUser/>}/>
+      <Route component={NotFound} />
     </Routes>  
     </UserContextProvider>       
     </>

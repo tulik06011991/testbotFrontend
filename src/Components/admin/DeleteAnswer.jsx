@@ -15,7 +15,7 @@ const DeleteAnswer = () => {
     }, []);
     const handleClearLocalStorage = () => {
         const token = localStorage.getItem('token');
-        axios.delete('https://testbotbackend-4.onrender.com/test/deleteJavoblar',
+        axios.delete('https://testbotbackend-5.onrender.com/test/deleteJavoblar',
             {
                 headers: {
                     'Content-Type': 'application/json',
