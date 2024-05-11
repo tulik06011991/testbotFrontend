@@ -13,7 +13,9 @@ const AdminFoydalanuvchilar = () => {
             const token = localStorage.getItem('token');
             await axios.delete(`https://testbotbackend-10.onrender.com/foydalanuvchi/user/${userId}`, {
                 headers: {
+                    
                     'Content-Type': 'application/json',
+                    
                     'access_token': token
                 },
                 withCredentials: true
