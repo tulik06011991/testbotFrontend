@@ -25,9 +25,12 @@ const Login = () => {
         { email: email, password: password },
         {
           headers: {
-            'Content-Type': 'application/json'
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "OPTIONS, GET, PUT POST",
+            "Access-Control-Allow-Headers": "*"
           },
-          withCredentials: true
+         
         },
       );
 

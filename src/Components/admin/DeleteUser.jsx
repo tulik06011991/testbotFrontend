@@ -18,7 +18,7 @@ const DeleteUser = () => {
                     'Content-Type': 'application/json',
                     'access_token': token
                 },
-                withCredentials: true
+              
             }
         )
        

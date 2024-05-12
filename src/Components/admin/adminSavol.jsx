@@ -56,7 +56,7 @@ const adminSavol = () => {
     event.preventDefault();
     try {
       const token = localStorage.getItem('token')
-      const response = await axios.post('https://testbotbackend-10.onrender.com/questions/adminPost', {
+      const response = await axios.post('https://testbotbackend-11.onrender.com/questions/adminPost', {
         title,
         options,
         correctAnswer
