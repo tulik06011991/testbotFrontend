@@ -22,7 +22,7 @@ const Logout = () => {
             localStorage.removeItem('ID')
           }
             try {
-              const response = await axios.get('https://testbotbackend-11.onrender.com/auth/logout');
+              const response = await axios.get('https://testbotbackend-svp9.onrender.com/auth/logout');
               const token = response.headers.get('access_token')
              
               // Ekranga chiqaramiz

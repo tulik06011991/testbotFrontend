@@ -25,7 +25,7 @@ const adminPanel = () => {
     const getUser = async () => {
       try {
         const response = await axios.get(
-          'https://testbotbackend-11.onrender.com/questions/adminInfoUser',
+          'https://testbotbackend-svp9.onrender.com/questions/adminInfoUser',
           {
             headers: {
               'Content-Type': 'application/json',
