@@ -15,7 +15,7 @@ const Biologiya = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get('https://testbotbackend-11.onrender.com/test/answer/get'); //https://testbotbackend-11.onrender.com
+        const response = await axios.get('https://testbotbackend-svp9.onrender.com/test/answer/get'); //https://testbotbackend-11.onrender.com
         setQuestions(response.data);
         console.log(response.data)
         setUserAnswers(Array(response.data.length).fill(''));
