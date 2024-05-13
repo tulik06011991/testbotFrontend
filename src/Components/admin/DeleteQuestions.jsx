@@ -10,7 +10,7 @@ const DeleteQuestions  = () => {
   useEffect(() =>{
       const deleteUserAnswer = async () => {
         try {
-          await axios.delete(`https://testbotbackend-3-tmg5.onrender.com/test/deleteSavollar`);
+          await axios.delete(`https://testbotbackend-4-hc9x.onrender.com/test/deleteSavollar`);
           setDeleted(true);
         } catch (error) {
           console.error('Error deleting user answer:', error);
