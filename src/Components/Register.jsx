@@ -20,11 +20,9 @@ const [password, setPassword] = useState('')
         {
           headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "OPTIONS, GET, PUT POST",
-            "Access-Control-Allow-Headers": "*"
+           
           },
-         s
+         withCredentials:true
         },
       );
      
