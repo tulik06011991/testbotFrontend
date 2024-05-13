@@ -45,10 +45,10 @@ const Biologiya = () => {
         userAnswer: userAnswers[currentQuestionIndex]
       });
       setMessage(response.data.message);
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setCurrentQuestionIndex(currentQuestionIndex );
       setNatija(response.data);
 
-      if (currentQuestionIndex === questions.length - 1) {
+      if (currentQuestionIndex === questions.length ) {
         navigate('/javob');
       }
     } catch (error) {
