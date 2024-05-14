@@ -26,7 +26,7 @@ const adminSavol = () => {
     const admin = async () =>{
       try {
         
-        const response = await axios.get(`https://testbotbackend-8-w273.onrender.com/foydalanuvchi/user/${id}`,
+        const response = await axios.get(`https://testbotbackend-9-80wh.onrender.com/foydalanuvchi/user/${id}`,
         {
           headers: {
             'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ const adminSavol = () => {
     event.preventDefault();
     try {
       const token = localStorage.getItem('token')
-      const response = await axios.post('https://testbotbackend-8-w273.onrender.com/questions/adminPost', {
+      const response = await axios.post('https://testbotbackend-9-80wh.onrender.com/questions/adminPost', {
         title,
         options,
         correctAnswer

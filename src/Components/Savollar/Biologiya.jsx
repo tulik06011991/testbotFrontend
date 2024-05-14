@@ -17,7 +17,7 @@ const Biologiya = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get('https://testbotbackend-8-w273.onrender.com/test/answer/get');
+        const response = await axios.get('https://testbotbackend-9-80wh.onrender.com/test/answer/get');
         setQuestions(response.data);
         setUserAnswers(Array(response.data.length).fill(''));
       } catch (error) {
@@ -37,7 +37,7 @@ const Biologiya = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/test/answer/post', {
+      const response = await axios.post('https://testbotbackend-9-80wh.onrender.com/test/answer/post', {
         userId: user,
         questionId: questions[currentQuestionIndex]._id,
         userAnswer: userAnswers[currentQuestionIndex]
