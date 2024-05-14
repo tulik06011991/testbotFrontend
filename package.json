@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "commonjs",
+  "proxy": "https://testbotbackend-6-6aes.onrender.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,7 +13,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
     "axios": "^1.6.8",
-    "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
@@ -33,3 +34,4 @@
     "vite": "^5.2.11"
   }
 }
+

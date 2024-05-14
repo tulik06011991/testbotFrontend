@@ -3,7 +3,7 @@ import './index.css'
 import Navbar from './Components/Navbar'
 import Register from './Components/Register'
 import Login from './Components/Login'
-import {Routes, Route, Redirect}  from 'react-router-dom'
+import {Routes, Route}  from 'react-router-dom'
 import Menu from './Components/Menu'
 import Biologiya from './Components/Savollar/Biologiya';
 import Tarix from './Components/Savollar/Tarix';
@@ -19,7 +19,8 @@ import DeleteQuestions from './Components/admin/DeleteQuestions'
 import GetQuestions from './Components/admin/GetQuestions'
 import AdminFoydalanuvchilar from './Components/admin/adminFoydalanuvchilar'
 import DeleteUser from './Components/admin/DeleteUser'
-import NotFound from './Components/NotFound'
+import ProtectedRoute from './Components/ProtectedRoute'
+
 
 function App() {
   return ( 
@@ -43,7 +44,8 @@ function App() {
       <Route path='/DeleteQuestions' element = {<DeleteQuestions/>}/>
       <Route path='/adminfoydalanuvchilar' element = {<AdminFoydalanuvchilar/>}/>
       <Route path='/DeleteUser/:id' element = {<DeleteUser/>}/>
-      <Redirect to="/adminpanel" />
+      <ProtectedRoute path='/*' element={<Navigate to="/" replace />} redirectTo="/" /> {/* Avtomatik ravishda "/" sahifaga o'tib qolishi */}
+      {/* <Redirect to="/adminpanel" /> */}
     </Routes>  
     </UserContextProvider>       
     </>
