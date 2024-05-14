@@ -11,7 +11,7 @@ const GetQuestions = () => {
     useEffect(() => {
         const fetchQuestions = async () => {
             try {
-                const response = await axios.get('https://testbotbackend-6-6aes.onrender.com/test/answer/get'); //https://testbotbackend-5.onrender.com
+                const response = await axios.get('https://testbotbackend-7-ftxu.onrender.com/test/answer/get'); //https://testbotbackend-5.onrender.com
                 setData(response.data);
                 console.log(response.data);
             } catch (error) {
